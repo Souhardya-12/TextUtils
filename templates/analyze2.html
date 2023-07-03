@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analyzing your text...</title>
+</head>
+<body>
+    {% if removepunc == "on" %}
+        <h1>your analyzed text- Remove Punctuations</h1>
+        <p>
+            {{analyzed}}
+        </p>
+    {% endif %}
+    {% if capitalize == "on" %}
+        <br><br>
+        <h1>your analyzed text- Capitalized text</h1>
+        <p>
+            {{analyzed1}}
+        </p>
+    {% endif %}
+    {% if nlremove == "on" %}
+        <br><br>
+        <h1>your analyzed text- New Line Removal</h1>
+        <p>
+            {{analyzed2}}
+        </p>
+    {% endif %}
+    {% if esremove == "on" %}
+        <br><br>
+        <h1>your analyzed text- Extra Space Removal</h1>
+        <p>
+            {{analyzed3}}
+        </p>
+    {% endif %}
+    {% if ccount == "on" %}
+        <br><br>
+        <h1>your analyzed text- Character Counting</h1>
+        <p>
+            The number of characters is: {{x}}
+        </p>
+    {% endif %}
+</body>
+</html>
